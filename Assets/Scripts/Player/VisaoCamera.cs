@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class VisaoCamera : MonoBehaviour
@@ -36,6 +37,16 @@ public class VisaoCamera : MonoBehaviour
         //Verificar se o raio encontrou algo
         if(Physics.Raycast(raio,out hit, Mathf.Infinity)){
             Debug.Log($"Alvo: {hit.transform.gameObject.name}");
+
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
+
+            AlvoVisto = hit.transform.gameObject;
+            hitAlvo = hit;
+        }
+        else
+        {
+            tagAlvo = " ";
+            alvo = null;
         }
     }
 }
