@@ -30,7 +30,7 @@ public class ArmaControlador : MonoBehaviour
         pente = municaoPorPente;
         municaoAtual = municaoMaxima;
 
-        //Configurar o volume do audio da arma
+        audioSource.volume = AudioMng.Instance.volumeVFX;//Configurar o volume do audio da arma
     }
 
     private void PlayDisparo(){
@@ -71,7 +71,7 @@ public class ArmaControlador : MonoBehaviour
     public void RecarregarArma(){
         //Se arma tem munição e verificar a quantidade de municao no pente
         if(municaoAtual > 0 && pente < municaoPorPente){
-            //Acionar o audio de recarregamento
+            audioSource.PlayOneShot(audios[1]);//Acionar o audio de recarregamento
 
             //Calcular uma diferença entre a munição que eu posso ter no pente com o que eu ja tenho no pente
             int diferenca = municaoPorPente - pente;
@@ -90,29 +90,29 @@ public class ArmaControlador : MonoBehaviour
     }
 
     private void InstanciarBala(){
-        //Dar dano ao objeto
-        PlayerManager.disparoPlayer.DanoAoObjeto();
+        PlayerMng.disparoPlayer.DanoAoObjeto();//Dar dano ao objeto
 
         pente--;
 
         //Verificar se acabou o pente
         if(pente <= 0){
-            //Ativar o audio de sem munição
+            audioSource.PlayOneShot(audios[2]); //Ativar o audio de sem munição
 
             PlaySemMunicao();
             pente = 0;
         }
 
-        //Ativar o audio do disparo
+        audioSource.PlayOneShot(audios[0]);//Ativar o audio do disparo
 
-        //Ativar o muzzleFlash
-        muzzleFlash.SetActive(true);
+        muzzleFlash.SetActive(true);//Ativar o muzzleFlash
 
         //Instanciar a capsula
-        
         GameObject cp = Instantiate(capsula);
+        //Posicionar a capsula na posição que vai ser ejetada
         cp.transform.position = posicaoCapsula.position;
+        //Posicionar a rotação na mesma rotação de saída da capsula
         cp.transform.rotation = posicaoCapsula.rotation;
+        //Chamar a função para ejetar a capsula
         cp.GetComponent<EjetarCapsula>().Ejetar();
     }
 
@@ -126,6 +126,6 @@ public class ArmaControlador : MonoBehaviour
 
     //Ativar o audio de Selecao da Arma
     public void AtivarAudioSelecaoArma(){
-        
+        audioSource.PlayOneShot(audios[3]);
     }
 }

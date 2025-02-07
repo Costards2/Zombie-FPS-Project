@@ -17,6 +17,9 @@ public class MovimentarPlayer : MonoBehaviour
     private Vector3 direcaoMovimentacao;
     CharacterController characterController;
 
+    public AudioSource audioSource;
+    public AudioClip[] audiosMovimentacao; //0 - Andar, 1 - Correr
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +32,17 @@ public class MovimentarPlayer : MonoBehaviour
         //Travar e ocultar o mouse no inicio do jogo
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        //Configura o volume de movimentação do player
+        audioSource.volume = AudioMng.Instance.volumeVFX;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(CanvasGameMng.Instance.fimDeJogo == true) return;
+        if(PlayerMng.Instance.estaMorto == true) return;
+        
         //Movimentar o player
 
         //Obter Referencia frente e lateral do objeto
@@ -54,6 +63,30 @@ public class MovimentarPlayer : MonoBehaviour
 
         //Calcular a direcao do player
         direcaoMovimentacao = (frente * velocidadeFrente) + (direita * velocidadeLateral);
+
+        //Verificar se está se movimentando para poder tocar o audio da movimentação
+        if(direcaoMovimentacao != Vector3.zero){
+            if(estaCorrendo == true){
+                if(audioSource.clip != audiosMovimentacao[1]){
+                    audioSource.Stop();
+                    audioSource.clip = audiosMovimentacao[1];
+                    audioSource.Play();
+                }
+            }
+            else{
+                if(audioSource.clip != audiosMovimentacao[0]){
+                    audioSource.Stop();
+                    audioSource.clip = audiosMovimentacao[0];
+                    audioSource.Play();
+                }
+            }
+            if(audioSource.isPlaying == false){
+                audioSource.Play();
+            }
+        }
+        else{
+            audioSource.Stop();
+        }
 
         //Vericar se o jogador está no chão para efetuar o pulo
         if(Input.GetButton("Jump") && characterController.isGrounded == true){
@@ -76,5 +109,9 @@ public class MovimentarPlayer : MonoBehaviour
         rotacaoX = Mathf.Clamp(rotacaoX,-limiteCameraX,limiteCameraX);
         playerCamera.transform.localRotation = Quaternion.Euler(rotacaoX,0,0);
         transform.rotation *= Quaternion.Euler(0,Input.GetAxis("Mouse X") * velocidadeCamera, 0);
+    }
+
+    public void MutarAudio(){
+        audioSource.volume = 0;
     }
 }

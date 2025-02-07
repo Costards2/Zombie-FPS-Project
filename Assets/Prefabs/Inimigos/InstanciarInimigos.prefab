@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &50015657450291114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347383787160101526}
+  - component: {fileID: 5715969914184939381}
+  m_Layer: 0
+  m_Name: InstanciarInimigos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &347383787160101526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50015657450291114}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5715969914184939381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50015657450291114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597588d94701e014d9d8481e3d41701b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigos:
+  - {fileID: 2479753799404171772, guid: 172335be8c011644199908be3cd7630b, type: 3}
+  - {fileID: 3350580635189252595, guid: fcbd3be7c674e2a4099b549bd9b78197, type: 3}
+  - {fileID: 872104179947638166, guid: fee3b6a297c30eb46b51ea2e9ee81ea0, type: 3}
+  - {fileID: 1862665660749501974, guid: 695bf287f2f728b47b4efcbf75c8c694, type: 3}
+  - {fileID: 6515741258245252413, guid: 310bb59c0a76e6a40afa487a50ac0bab, type: 3}
+  - {fileID: 2359995977395826486, guid: 764a088138079b34283e47c12ab7a210, type: 3}
+  - {fileID: 9059608556353970187, guid: 4dbbb366153a6004c88752e133ca2719, type: 3}
+  - {fileID: 2636479761964686527, guid: b95be868ef1919946a0f3e135baa26d0, type: 3}
+  tempoDeEspera: 2
+  maximoDeInimigosNaFase: 100
+  audiosZumbi:
+  - {fileID: 8300000, guid: bc2baab908f1b004691a6ecf7044f61c, type: 3}
+  - {fileID: 8300000, guid: 12e7285fa38aaf943a0ed8c7f3c684eb, type: 3}
+  - {fileID: 8300000, guid: 9df77b70cadc8384ca073a95aebc666f, type: 3}
+  - {fileID: 8300000, guid: 1d92c5ac0e056b045b4461b147f95be5, type: 3}
+  - {fileID: 8300000, guid: ebb96c703224744479e6294bd49515d9, type: 3}
+  - {fileID: 8300000, guid: f1ff3e33006a291449618f6fc613e928, type: 3}
+  - {fileID: 8300000, guid: 168c9a5ac7025814ea9c89e5098a3cad, type: 3}
+  - {fileID: 8300000, guid: ceb2474913e8b5e40b17213af473d784, type: 3}
