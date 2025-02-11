@@ -1123,8 +1123,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Configura\xE7\xF5es"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13b777c49cb76da4a92a2f895bf02aa4, type: 2}
-  m_sharedMaterial: {fileID: 286750056876588631, guid: 13b777c49cb76da4a92a2f895bf02aa4,
+  m_fontAsset: {fileID: 11400000, guid: e58c390239a92514995c9d0cc658537b, type: 2}
+  m_sharedMaterial: {fileID: -8446292853962824914, guid: e58c390239a92514995c9d0cc658537b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1149,8 +1149,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 242.3
+  m_fontSizeBase: 242.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1333,8 +1333,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sair
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13b777c49cb76da4a92a2f895bf02aa4, type: 2}
-  m_sharedMaterial: {fileID: 286750056876588631, guid: 13b777c49cb76da4a92a2f895bf02aa4,
+  m_fontAsset: {fileID: 11400000, guid: e58c390239a92514995c9d0cc658537b, type: 2}
+  m_sharedMaterial: {fileID: -8446292853962824914, guid: e58c390239a92514995c9d0cc658537b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1359,8 +1359,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1870,17 +1870,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jogo desenvolvido pelos alunos do curso de desenvolvimento de games oferecido
-    pela Salvador Tech/Unifel.\r\n\r\nO jogo \xE9 ambientado num mundo 3D onde o
-    jogador deve enfrentar os zumbis no mapa, coletar recursos para conseguir derrota-los
-    e obter todas as 7 chaves para conseguir vencer.\r\n\nTutorial\n\nTeclas AWSD
-    movem o personagem.\r\n\rA tecla Espa\xE7o faz o personagem pular.\r\n\rA tecla
-    Shift Esquerdo faz o personagem correr.\r\n\rA tecla R recarrega a arma.\r\n\rA
-    tecla ESC volta para o menu.\r\n\rA tecla F acende ou apaga a lanterna.\nA tecla
-    1 e 2 altera as armas.\n\r\nObrigado por Jogar!"
+  m_text: "Sobre:\r\nEsse foi um jogo de FPS 3D  desenvolvido no curso de games oferecido
+    pela Salvador Tech/Unifel , em conjunto com o professor Rodolfo Moraes. \r\n\r\nVoc\xEA
+    \xE9 um soldado que  deve enfrentar os zumbis , coletar recursos para  garantir
+    sua sobreviv\xEAncia enquanto busca obter todas as 7 chaves para conseguir fugir.\r\n\r\nO
+    jogador possui duas armas, uma pistola e um rifle de assalto.\r\n\r\nNo mapa
+    o jogador pode encontrar kits m\xE9dicos e muni\xE7\xE3o para as armas.\r\n\r\nTutorial:\r\nAs
+    Teclas AWSD movem o personagem.\r\nA tecla Espa\xE7o faz o personagem pular.\r\nA
+    tecla Shift Esquerdo faz o personagem correr.\r\nA tecla 1 e 2 alternam entre
+    as armas, sendo 1 a pistola e 2 o rifle.\r\nA tecla R recarrega a arma.\r\nA
+    tecla ESC volta para o menu.\r\nA tecla F acende ou apaga a lanterna."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13b777c49cb76da4a92a2f895bf02aa4, type: 2}
-  m_sharedMaterial: {fileID: 286750056876588631, guid: 13b777c49cb76da4a92a2f895bf02aa4,
+  m_fontAsset: {fileID: 11400000, guid: e58c390239a92514995c9d0cc658537b, type: 2}
+  m_sharedMaterial: {fileID: -8446292853962824914, guid: e58c390239a92514995c9d0cc658537b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1905,8 +1907,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.35
-  m_fontSizeBase: 34.81
+  m_fontSize: 41.1
+  m_fontSizeBase: 40.32
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
@@ -1941,7 +1943,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -93.51959, y: -147.29895, z: -87.692505, w: 3.8676758}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2657,8 +2659,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Volume VFX
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13b777c49cb76da4a92a2f895bf02aa4, type: 2}
-  m_sharedMaterial: {fileID: 286750056876588631, guid: 13b777c49cb76da4a92a2f895bf02aa4,
+  m_fontAsset: {fileID: 11400000, guid: e58c390239a92514995c9d0cc658537b, type: 2}
+  m_sharedMaterial: {fileID: -8446292853962824914, guid: e58c390239a92514995c9d0cc658537b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2683,8 +2685,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66
-  m_fontSizeBase: 66
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2964,8 +2966,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Volume Musica
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13b777c49cb76da4a92a2f895bf02aa4, type: 2}
-  m_sharedMaterial: {fileID: 286750056876588631, guid: 13b777c49cb76da4a92a2f895bf02aa4,
+  m_fontAsset: {fileID: 11400000, guid: e58c390239a92514995c9d0cc658537b, type: 2}
+  m_sharedMaterial: {fileID: -8446292853962824914, guid: e58c390239a92514995c9d0cc658537b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2990,13 +2992,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66
-  m_fontSizeBase: 66
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3203,7 +3205,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754387587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3211,7 +3213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.20000076, y: 1.1000004}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754387589
@@ -3236,8 +3238,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jogar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13b777c49cb76da4a92a2f895bf02aa4, type: 2}
-  m_sharedMaterial: {fileID: 286750056876588631, guid: 13b777c49cb76da4a92a2f895bf02aa4,
+  m_fontAsset: {fileID: 11400000, guid: e58c390239a92514995c9d0cc658537b, type: 2}
+  m_sharedMaterial: {fileID: -8446292853962824914, guid: e58c390239a92514995c9d0cc658537b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3262,8 +3264,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3346,7 +3348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -228}
+  m_AnchoredPosition: {x: 0, y: -120}
   m_SizeDelta: {x: 1517, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819626186
@@ -3371,8 +3373,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sobre
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13b777c49cb76da4a92a2f895bf02aa4, type: 2}
-  m_sharedMaterial: {fileID: 286750056876588631, guid: 13b777c49cb76da4a92a2f895bf02aa4,
+  m_fontAsset: {fileID: 11400000, guid: e58c390239a92514995c9d0cc658537b, type: 2}
+  m_sharedMaterial: {fileID: -8446292853962824914, guid: e58c390239a92514995c9d0cc658537b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3397,8 +3399,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3510,14 +3512,14 @@ RectTransform:
   m_GameObject: {fileID: 1880578728}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1349, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 690755228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.011474609, y: -157.06659}
+  m_AnchoredPosition: {x: 0.011474609, y: -110}
   m_SizeDelta: {x: 0, y: -314.13318}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880578730
