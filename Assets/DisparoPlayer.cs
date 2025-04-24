@@ -6,7 +6,19 @@ public class DisparoPlayer : MonoBehaviour
     public ArmaControlador fuzilControlador;
     public GameObject impactoBalaInimigo;
     public GameObject impactorBala;
-    public int idArmaAtiva = 1; // 1 - Pistola, 2 - Fuzil
+    
+    private int _idArmaAtiva = 1; // 1 - Pistola, 2 - Fuzil
+
+    public int IDArmaAtiva
+    {
+        get { return _idArmaAtiva; }
+        
+        set
+        {
+            _idArmaAtiva = Mathf.Clamp(value, 1, 2); // Garante que fique entre 0 e 5
+        }
+    }
+
     private ArmaControlador armaAtiva;
 
     public ArmaControlador ArmaAtiva{
@@ -16,7 +28,7 @@ public class DisparoPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AtivarArma(idArmaAtiva);
+        AtivarArma(_idArmaAtiva);
     }
 
     // Update is called once per frame
@@ -28,14 +40,30 @@ public class DisparoPlayer : MonoBehaviour
         SelecionarArma();
         DispararArma();
         RecarregarArma();
+
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+
+        if (scroll > 0f)
+        {
+            IDArmaAtiva++;
+            AtivarArma(IDArmaAtiva);
+        }
+        else if (scroll < 0f)
+        {
+            IDArmaAtiva--;
+            AtivarArma(IDArmaAtiva);
+        }
     }
 
     private void AtivarArma(int idArma){
         pistolaControlador.gameObject.SetActive(idArma == 1);
         fuzilControlador.gameObject.SetActive(idArma == 2);
         armaAtiva = idArma == 1 ? pistolaControlador : idArma == 2 ? fuzilControlador : null;
+        _idArmaAtiva = idArma;
+
+        if ((armaAtiva == pistolaControlador && idArma == 1) || (armaAtiva == fuzilControlador && idArma == 2)) return;
+       
         armaAtiva.AtivarAudioSelecaoArma();
-        idArmaAtiva = idArma;
     }
 
     private void SelecionarArma(){
